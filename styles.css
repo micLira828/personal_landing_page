@@ -1,0 +1,96 @@
+body{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+/*  background-image: url('computerArt.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+header{
+  padding:5%;
+}
+
+header h1{
+  font-size: 90px;
+}
+
+header, main{
+  text-align: center;
+}
+h2{
+  font-size: 60px;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+nav li{
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration:none;
+  color: black;
+  font-weight: bold;
+}
+
+
+button{
+  background-color: #9cf;
+  border: 0;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+  transition:background-color, color, width, height .5s ease-in-out;
+}
+
+button:hover{
+  color: white;
+  background-color: #004d99;
+  width: 150px;
+  height: 150px
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle{
+  background-color:#f90;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border-radius: 100%;
+  margin: 5%;
+}
+
+.circle:hover{
+  animation: bounceBall 1s;
+}
+
+.firstTwoBalls{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@keyframes bounceBall{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
