@@ -1,0 +1,38 @@
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .circle{
+    background-color:#f90;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 5%;
+  }
+  
+  .circle:hover{
+    animation: bounceBall 1s;
+  }
+  
+  .firstTwoBalls{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+@keyframes bounceBall{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(15px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
