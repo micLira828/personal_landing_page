@@ -1,15 +1,17 @@
 import Contact from './contact/Contact';
 import Nav from './nav/Nav';
-import Computer from './logo/Computer';
+import Header from './header/Header';
 
 
 
 function App() {
   return (
     <>
-  <Computer/>
+  <div class = "container">
+  <Header/>
   <Contact/>
   <Nav/>
+  </div>
   </>
   );
 }
